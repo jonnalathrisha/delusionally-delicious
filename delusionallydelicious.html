@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delusionally Delicious</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fffefc, #fef5e5);
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe9d6;
+      border-bottom: 4px solid #ffc8a2;
+    }
+
+    #logo {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    h1, h2 {
+      margin: 10px 0;
+      color: #ff6b6b;
+    }
+
+    select, input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    .menu-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin: 30px auto;
+      max-width: 1200px;
+    }
+
+    .item {
+      background-color: #fffdf8;
+      border-radius: 16px;
+      padding: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.03);
+    }
+
+    .item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .item h3 {
+      margin: 10px 0;
+      font-size: 20px;
+      color: #ff7e5f;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ffb6a3;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 14px;
+      margin-top: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff947c;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #ffe1cc;
+      color: #444;
+      font-size: 14px;
+    }
+
+    .search-area {
+      text-align: center;
+      margin: 20px 0;
+    }
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background: url("background.jpg") center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #333;
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <img id="logo" src="logo.png" alt="Delusionally Delicious Logo">
+    <h1>Get Your Delivery Within 3 Minutes!!!</h1>
+    <h2>Order now and Grab Your Offer....</h2>
+
+    <label for="branches">Choose your nearest branch:</label>
+    <select id="branches">
+      <option>Maisammaguda</option>
+      <option>Medchal</option>
+      <option>Kompally</option>
+      <option>Kukatpally</option>
+      <option>Jublihills</option>
+      <option>Banjarahills</option>
+      <option>Secunderabad</option>
+      <option>LB Nagar</option>
+      <option>Uppal</option>
+    </select>
+  </header>
+
+  <div class="search-area">
+    <input type="text" placeholder="Search your cravings...">
+  </div>
+
+  <div class="menu-section">
+    <!-- Food Items -->
+    <div class="item">
+      <img src="burgerr.webp" alt="Fingerino Burgerino">
+      <h3>Fingerino Burgerino 🔥</h3>
+      <p>₹600</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="https://th.bing.com/th/id/OIP.dpScTeiYT6wsgg5FvjCnbwHaEo?w=300" alt="Pizzoranza">
+      <h3>Pizzoranza 😋</h3>
+      <p>₹400</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="biryani.jpeg" alt="Bombastic Biryani">
+      <h3>Bombastic Biryani 👌</h3>
+      <p>₹100</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48O1pbvSaJSnyre5oQoUcKqLi2ZwyBXnJIg&s" alt="Unicorn Cupcake">
+      <h3>Unicorn Cupcake 🦄</h3>
+      <p>₹300</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="donut.jpeg" alt="Dancing Donut">
+      <h3>Dancing Donut 💃</h3>
+      <p>₹400</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="franky.jpeg" alt="Wrap It Up">
+      <h3>Wrap It Up 🌯</h3>
+      <p>₹150</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="chocostorm.jpeg" alt="Choco Storm">
+      <h3>Choco Storm 🍫</h3>
+      <p>₹250</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+
+    <div class="item">
+      <img src="taco.jpeg" alt="Taco Tornado">
+      <h3>Taco Tornado 🌪️</h3>
+      <p>₹200</p>
+      <button onclick="addToStomach(this)">Add to Stomach</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Delusionally Delicious. All rights reserved.
+  </div>
+
+  <script>
+    function addToStomach(button) {
+      button.textContent = "Added! ✅";
+      button.style.backgroundColor = "#92e3a9";
+      setTimeout(() => {
+        button.textContent = "Add to Stomach";
+        button.style.backgroundColor = "#ffb6a3";
+      }, 1500);
+    }
+  </script>
+</body>
+</html>
+
